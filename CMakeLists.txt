@@ -53,7 +53,7 @@ IF(WIN32)
 ELSE(WIN32)
   SET(LINK create_symlink)
 ENDIF(WIN32)
-
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 # --- OPTIONS ----------------------------------------
 OPTION(BUILD_BENCHMARK "Build the benchmarks" OFF)
 OPTION(BUILD_UTILS "Build the utils" OFF)
